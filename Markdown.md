@@ -79,7 +79,9 @@ In markdown you can use html tags and even style for css wherever you can't cont
 <img class="cat-img" src="cat.jpg" />
 
 <style>
-  img {width: 400;}
+  img {
+    width: 400;
+  }
 </style>  
 !?Not working for me
 
@@ -89,7 +91,7 @@ You write use figure and figcaption in html
   <figcaption>
     Fox image figcaption
   </figcaption>
-</figure>
+</figure>  
 
 <style>
   figcaption {color: red}
