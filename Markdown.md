@@ -78,5 +78,5 @@ In markdown you can use html tags and even style wherever you can't control
 <img src="dog.jpg" width="300" height="50" />  
 <img class="cat-img" src="cat.jpg" />  
 <style>
-  .cat-img {width: 400;}
+  img {width: 400;}
 </style>
