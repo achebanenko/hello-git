@@ -57,6 +57,26 @@ Or you use [text][word] as index, and then even only shortcut itself [word]
 [word]: //word.com
 
 
+## 5. Markdown Images
 
+Inserting image is similar to linking, just use ! before [] which stands for alt - maybe empty, and then () where you place source and "title" if needs.
+![Alt for image](http://unsplash.it/300/200?random "Title for image")
 
+[pup]: http://unsplash.it/300/200?image=1012
 
+Or you can use reference same as in link, ex. pup image  
+![Pup image][pup]
+and put value of your ref before or after this peace of text.
+
+You can use nested markdown to put link for larger image  
+[![](http://unsplash.it/50/50?image=1000)](http://unsplash.it/500/500?image=1000)  
+
+Or use html inside  
+[<img src="http://unsplash.it/50/50?image=1000"/>](http://unsplash.it/500/500?image=1000)
+
+In markdown you can use html tags and even style wherever you can't control  
+<img src="dog.jpg" width="300" height="50" />  
+<img class="cat-img" src="cat.jpg" />  
+<style>
+  .cat-img {width: 400;}
+</style>
