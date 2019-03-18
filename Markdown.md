@@ -1,6 +1,7 @@
-Wes Bos - http://masteringmarkdown.com
+Wes Bos - Mastering Markdown - My Playground  
+http://masteringmarkdown.com
 
-2. Paragraphs and Text Decoration
+## 2. Paragraphs and Text Decoration
 
 one
 two
