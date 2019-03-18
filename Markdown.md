@@ -30,7 +30,12 @@ For nesting use tab or two spaces to indenting
   
     This is inline  
     ![](http://unsplash.it/150/100?random)
+    ```js
+     var x = 100;
+    ```
 1. Second step
+
+
 
 ## 5. Markdown Images
 
