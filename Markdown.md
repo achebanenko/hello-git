@@ -30,3 +30,12 @@ Headings have automatic id set
 ####### H7
 Indeed H7 does not exist?
 
+Another way just for h1 and h2
+
+Heading 1
+===
+Heading 2
+---
+
+
+
