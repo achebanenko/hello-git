@@ -85,8 +85,13 @@ In markdown you can use html tags and even style for css wherever you can't cont
 
 You write use figure and figcaption in html  
 <figure>
+  <img src="fox.jpg"/>  
   <figcaption>
-    Figcaption
+    Fox image figcaption
   </figcaption>
- </figure>
+</figure>
+
+<style>
+  figcaption {color: red}
+</style>
 
