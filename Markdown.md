@@ -1,2 +1,2 @@
-Wes Bos //masteringmarkdown.com
+Wes Bos ://masteringmarkdown.com
 
