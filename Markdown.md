@@ -74,9 +74,19 @@ You can use nested markdown to put link for larger image
 Or use html inside  
 [<img src="http://unsplash.it/50/50?image=1000"/>](http://unsplash.it/500/500?image=1000)
 
-In markdown you can use html tags and even style wherever you can't control  
+In markdown you can use html tags and even style for css wherever you can't control  
 <img src="dog.jpg" width="300" height="50" />  
-<img class="cat-img" src="cat.jpg" />  
+<img class="cat-img" src="cat.jpg" />
+
 <style>
   img {width: 400;}
-</style>
+</style>  
+!?Not working for me
+
+You write use figure and figcaption in html  
+<figure>
+  <figcaption>
+    Figcaption
+  </figcaption>
+ </figure>
+
