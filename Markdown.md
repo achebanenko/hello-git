@@ -1,6 +1,38 @@
 Wes Bos - Mastering Markdown - My Playground  
 http://masteringmarkdown.com
 
+## 7 Line Breaks, Horizontal Rules and BlockQuotes
+
+**Line Breaks**
+
+Wes is cool. Use **br** tag<br>
+He really is. Or **two spaces** works for me.  
+Really works.
+
+**Horisontal rules**
+
+Why = this doesnt work?
+
+===
+
+But leave empty lines between **three signs of = or -**
+
+---
+
+Also this * three times works for horisontal rules
+
+***
+
+**Blockquotes**
+
+> You miss 100% of the shots you don't take. - Wayne Gretzky
+>
+> Next line hhere
+>
+>
+> One more line maybe **Author**
+
+
 ## 6. Lists — Ordered, Unorderd, Bullets and Nesting
 
 Use whatever or * or - or + for list, then combine few for nested lists
