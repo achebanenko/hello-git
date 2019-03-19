@@ -1,6 +1,20 @@
 Wes Bos - Mastering Markdown - My Playground  
 http://masteringmarkdown.com
 
+## 10. Github Treats
+
+**Checkboxes**
+
+Write list and after * put [] with space inside, then put **x** for done todos
+* [ ] Gert milk
+* [x] Crack eggs
+* [ ] Cook bacon
+
+**Reference to pull request**
+
+I had the same problem in #51 but fixed it with @person - should appear select-list to choose from pull requests and people after typing # and @
+
+
 ## 9. Tables
 
 Use **pipe around** columns and also separate table head from table body with : and any of -
