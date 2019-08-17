@@ -1,3 +1,7 @@
-Hi there!
-I'm new member of great community.
-Code is my passion!
+## Study project to learn Git and Github
+
+TOC
+
+- [Markdown basics](https://github.com/art-optimise/hello-git/blob/master/Markdown.md)
+- [Commands]
+- [Workflow]
