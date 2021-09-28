@@ -5,8 +5,6 @@ https://git-scm.com/docs
 ---
 
 
-
-`git status`  
 `git diff`  
 `git log`  
 `git reflog` # show last commits and hashes

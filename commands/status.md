@@ -1,0 +1,5 @@
+# status
+
+
+`git status`
+
