@@ -6,7 +6,7 @@ List all branches that exist
 Gives you all tracking branches (configured for 'pull')  
 `git branch -vv`  
 
-Delete branch 'start'  
+Delete local branch 'start' (to delete remote branch see push command)  
 `git branch -d start`
 
 Rename branch once you have an !initial commit (into any branch)
