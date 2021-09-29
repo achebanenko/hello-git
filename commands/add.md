@@ -3,9 +3,10 @@
 Signaling (not send) that we want this file to participate in the next commit  
 `git add filename.txt`
 
-Adding all files  
-`git add .`  
-or  
-`git add -A`
+Stage all (new, modified, deleted) files  
+`git add -A` # --all
+
+Stage all (new, modified, deleted) files in current folder  
+`git add .`
 
 
