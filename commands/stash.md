@@ -10,8 +10,8 @@ Inspect
 `git stash show`
 
 Apply  
-`git stahs apply`
+`git stash apply`
 
-Drop (last by one)  
+Drop (from last by one)  
 `git stash drop`
 
