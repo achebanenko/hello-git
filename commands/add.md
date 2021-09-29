@@ -1,5 +1,7 @@
 # add
 
+Some some from hello
+
 Signaling (not send) that we want this file to participate in the next commit  
 `git add filename.txt`
 
