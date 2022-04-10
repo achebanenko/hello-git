@@ -1,12 +1,13 @@
-
+# Work with .gitignore
 
 Create new file .gitignore  
-`touch .gitignore`
+`$ touch .gitignore`
 
 Remove something  
-`rm .DS_Store`
+`$ rm .DS_Store`
 
-.gitignore example
+## .gitignore example
+
 ```
 .DS_Store
 
