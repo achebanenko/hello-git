@@ -1,16 +1,21 @@
 # Hello git
 
-TOC  
+https://git-scm.com/book/it/v2/Git-Basics-Working-with-Remotes  
+https://git-scm.com/docs  
 
-- [Markdown basics](https://github.com/art-optimise/hello-git/blob/master/Markdown.md)
-- [Commands](https://github.com/art-optimise/hello-git/blob/master/Commands.md)
-- [Workflow](https://github.com/art-optimise/hello-git/blob/master/Workflow.md)
+## TOC
 
-## Commands
-
-
-## Markdown
+- [Commands](https://github.com/art-optimise/hello-git/tree/master/commands)
+- [Workflow](https://github.com/art-optimise/hello-git/tree/master/workflow)
+- [Markdown basics](https://github.com/art-optimise/hello-git/tree/master/markdown)
 
 
-## Workflow
 
+## TODO
+
+https://www.atlassian.com/git/tutorials/using-branches/git-merge
+https://longair.net/blog/2009/04/16/git-fetch-and-merge/
+
+https://www.atlassian.com/ru/git/tutorials/rewriting-history
+
+https://platform.sh/
