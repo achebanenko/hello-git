@@ -1,4 +1,4 @@
-# Generate and add an SSH key
+# Getting an SSH key
 
 https://docs.github.com/en/authentication/connecting-to-github-with-ssh  
 
@@ -8,7 +8,7 @@ https://docs.github.com/en/authentication/connecting-to-github-with-ssh
 List the files in your .ssh directory, if they exist  
 `$ ls -al ~/.ssh`
 
-## Generating a new SSH key and adding it to the ssh-agent
+## Generating a new SSH key
 
 `$ ssh-keygen -t ed25519 -C "your_email@example.com"`
 
@@ -32,7 +32,7 @@ You can change the passphrase for an existing private key without regenerating t
 
 ## Adding your SSH key to the ssh-agent
 
-1. Start the ssh-agent in the background  
+### 1. Start the ssh-agent in the background  
 
 ```
 $ eval "$(ssh-agent -s)"
@@ -42,17 +42,17 @@ $ eval "$(ssh-agent -s)"
 Depending on your environment, you may need to use root access by running `sudo -s -H` before starting the ssh-agent, or you may need to use `exec ssh-agent bash` or `exec ssh-agent zsh` to run the ssh-agent.
 
 
-2. Add your SSH private key to the ssh-agent and store your passphrase in the keychain  
+### 2. Add your SSH private key to the ssh-agent  
 
-`$ ssh-add --apple-use-keychain ~/.ssh/id_ed25519`
+`$ ssh-add ~/.ssh/id_ed25519`  
 
-`--apple-use-keychain` flag is Apple’s standard version of ssh-add. This adds the passphrase of your SSH key automatically to the keychain so that you don’t have to enter the passphrase every time you make an SSH connection (previously, the flag was `-K`)  
+If you have to store your setted passphrase in the keychain  `$ ssh-add --apple-use-keychain ~/.ssh/id_ed25519`  
 
-If you have not set a passphrase for your key, you can `$ ssh-add ~/.ssh/id_ed25519`  
+Where `--apple-use-keychain` flag is Apple’s standard version of ssh-add. This adds the passphrase of your SSH key automatically to the keychain so that you don’t have to enter the passphrase every time you make an SSH connection (previously, the flag was `-K`)    
 
 The `-A` flag is also deprecated and have been replaced by the  `--apple-load-keychain` flag.  
 
-3. Set up the config file for some convenient options  
+### 3. Set up the config file for some convenient options  
 
 You will need to modify your ~/.ssh/config file to automatically load keys into the ssh-agent and store passphrases in your keychain  
 
@@ -104,3 +104,34 @@ This will add Github as a known host in the known_hosts file in the /.ssh folder
 > Hi username! You've successfully authenticated, but GitHub does not
 > provide shell access.
 ```
+
+
+## Manage Multiple SSH Keys for Different GitHub Accounts
+
+https://kinsta.com/blog/generate-ssh-key/#manage-multiple-ssh-keys-for-different-github-accounts  
+
+
+1 Create another SSH key pair  
+`$ ssh-keygen -t ed25519 -C "work@email.com"`  
+
+2 Create the SSH config file (if not)  
+`$ touch ~/.ssh/config`  
+
+3 Open the config file and paste  
+```
+# Your day-to-day GitHub account
+Host github.com
+  HostName github.com
+  IdentityFile ~/.ssh/id_ed25519
+  IdentitiesOnly yes
+
+# Work account
+Host github-work
+  HostName github.com
+  IdentityFile ~/.ssh/work_key_file
+  IdentitiesOnly yes
+```
+
+4 When you need to authenticate via SSH using your work or secondary account, you tweak a bit the repo SSH address from `git@github.com` to  
+`git@github-work:workaccount/project.git`  
+
