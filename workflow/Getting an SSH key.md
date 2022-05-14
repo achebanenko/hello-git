@@ -2,6 +2,8 @@
 
 https://docs.github.com/en/authentication/connecting-to-github-with-ssh  
 
+https://medium.com/@Magical_Mudit/understanding-ssh-workflow-66a0e8d4bf65
+
 
 ## Checking for existing SSH keys
 
